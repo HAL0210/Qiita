@@ -20,4 +20,5 @@ darkmodeBtn.addEventListener('click', () => {
 
 clearBtn.addEventListener('click', () => {
   localStorage.removeItem('mode');
+  console.log('ローカルストレージがクリアされました。')
 });
