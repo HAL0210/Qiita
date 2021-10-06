@@ -31,10 +31,12 @@ main {
   background-color: silver;
   color: black;
   width: 200px;
+  margin-top: 30px;
   text-align: center;
   cursor: pointer;
   user-select: none;
 }
+
 
 /* ダークモードCSS */
 .dark {

@@ -9,12 +9,12 @@ if (mode === 'dark') {
 
 darkmodeBtn.addEventListener('click', () => {
   body.classList.toggle('dark');
-  if (mode === 'normal') {
-    localStorage.setItem('mode', 'dark');
-    mode = 'dark';
-  } else {
+  if (mode === 'dark') {
     localStorage.setItem('mode', 'normal');
     mode = 'normal';
+  } else {
+    localStorage.setItem('mode', 'dark');
+    mode = 'dark';
   }
 });
 
