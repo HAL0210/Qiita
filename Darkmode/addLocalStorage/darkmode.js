@@ -11,10 +11,12 @@
 
   darkmodeBtn.addEventListener('click', () => {
     body.classList.toggle('dark');
-    if (isDarkmode === 'dark') {
+    if (isDarkmode === 'normal') {
       localStorage.setItem('darkmode', 'dark');
     } else {
       localStorage.setItem('darkmode', 'normal');
     }
+    isDarkmode = localStorage.getItem('darkmode');
+    console.log(isDarkmode)
   });
 }
