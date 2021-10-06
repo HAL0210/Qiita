@@ -1,5 +1,6 @@
 const body = document.querySelector('body');
 const darkmodeBtn = document.getElementById('darkmodeBtn');
+const clearBtn = document.getElementById('clear');
 
 var mode = localStorage.getItem('mode');
 if (mode === 'dark') {
@@ -15,4 +16,8 @@ darkmodeBtn.addEventListener('click', () => {
     localStorage.setItem('mode', 'normal');
     mode = 'normal';
   }
+});
+
+clearBtn.addEventListener('click', () => {
+  localStorage.removeItem('mode');
 });
