@@ -1,7 +1,7 @@
 const body = document.querySelector('body');
 const darkmodeBtn = document.getElementById('darkmodeBtn');
 
-var mode = localStorage.getItem('mode');
+var mode = sessionStorage.getItem('mode');
 if (mode === 'dark') {
   body.classList.add('dark');
 }
@@ -9,10 +9,10 @@ if (mode === 'dark') {
 darkmodeBtn.addEventListener('click', () => {
   body.classList.toggle('dark');
   if (mode === 'normal') {
-    localStorage.setItem('mode', 'dark');
+    sessionStorage.setItem('mode', 'dark');
     mode = 'dark';
   } else {
-    localStorage.setItem('mode', 'normal');
+    sessionStorage.setItem('mode', 'normal');
     mode = 'normal';
   }
 });
